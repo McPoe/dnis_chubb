@@ -140,7 +140,7 @@
                     </td>
                 </div>
             </div>
-            <div class="col-12 show-on-mobile">
+            <div class="col-12 show-on-mobile" style="padding-left: 0px;">
                 <div style="display: flex; justify-content: center;">
                     <div style="float: left;">
                         <span style="vertical-align: middle;"><i class="fa fa-2x fa-phone" aria-hidden="true" style="color: #ce1127; padding:.8em .1em;"></i></span>
@@ -183,7 +183,7 @@
                                         <tbody>
                                             <tr>
                                                 <td align="center">
-                                                    <div align="center" style="width:600px">
+                                                    <div align="center" class="table400">
                                                         <table>
                                                             <tbody>
                                                                 <tr>
@@ -193,13 +193,13 @@
                                                                                 <tr>
                                                                                     <td align="right">First Name &nbsp;</td>
                                                                                     <td align="left">
-                                                                                        <input name="txt_Name" size="12" maxlength="50" value="" onblur="this.value=this.value.toUpperCase();" style="width:20em">
+                                                                                        <input name="txt_Name" size="12" maxlength="50" value="" onblur="this.value=this.value.toUpperCase();" style="width:20em" class="inputmob">
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="right">Last Name &nbsp;</td>
                                                                                     <td align="left">
-                                                                                        <input name="txt_LName" size="12" maxlength="50" value="" onblur="this.value=this.value.toUpperCase();" style="width:20em">
+                                                                                        <input name="txt_LName" size="12" maxlength="50" value="" onblur="this.value=this.value.toUpperCase();" style="width:20em" class="inputmob">
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -313,7 +313,7 @@
                                                                                     <td align="right">Vehicle Type: &nbsp;</td>
                                                                                     <td align="left">
                                                                                         <div class="select_5">
-                                                                                            <select name="vehicleTypeId" id="vehicleTypeId" style="width:20em;" onchange="setMinValue(this.options[this.selectedIndex].value);">
+                                                                                            <select name="vehicleTypeId" id="vehicleTypeId" style="width:20em;" class="inputmob" onchange="setMinValue(this.options[this.selectedIndex].value);">
                                                                                                 <option value="0">Choose vehicle ...</option>
                                                                                                 <option value="1" selected="">AUTO/MINIVAN/VAN</option>
                                                                                                 <option value="1" selected="">AUTO/MINIVAN/VAN</option><option value="1" selected="">AUTO/MINIVAN/VAN</option>
@@ -329,7 +329,7 @@
                                                                                 <tr>
                                                                                     <td align="right">ACV: &nbsp;</td>
                                                                                     <td align="left" id="vehicleValueTD">
-                                                                                        <select name="vehicleValue" id="vehicleValue" style="width:20em">
+                                                                                        <select name="vehicleValue" id="vehicleValue" style="width:20em" class="inputmob">
                                                                                             <option value="">Choose value...</option>
                                                                                             <option value="5000">$&nbsp;5000 USD</option>
                                                                                             <option value="6000">$&nbsp;6000 USD</option>
@@ -390,7 +390,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td>
-                                                                                                        <select name="specialEquipmentValue" id="specialEquipmentValue" style="width:20em">
+                                                                                                        <select name="specialEquipmentValue" id="specialEquipmentValue" style="width:20em" class="inputmob">
                                                                                                             <option value="">Choose special equipment value...</option>
                                                                                                             <option value="1000">$&nbsp;1000 USD</option>
                                                                                                             <option value="2000">$&nbsp;2000 USD</option>
@@ -616,6 +616,7 @@
             border-radius:4px;
             -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
         }
+
         tr.optquote > td{
             padding: 3px !important;
             font-size: 13px;
@@ -636,6 +637,7 @@
             visibility: hidden;
         }
 
+
         @media screen and (max-width: 600px){
         .show-on-mobile{
             display: block;
@@ -654,6 +656,23 @@
 
         .agentinfo{
             margin-top: 1em;
+        }
+
+        .table400{
+            width: 300px; 
+
+        }
+
+        .marcotres td{
+            font-size: 12px;
+        }
+
+        .inputmob{
+            width: 15em !important;
+        }
+
+        .marcoinit{
+            margin: 0px;
         }
     } 
 
